@@ -1,0 +1,47 @@
+
+<div style="width:60rem;" >
+    <div class="col-lg-12">
+    <div class="text-center">ADD TESTIMONIAL</div>
+      
+          
+   
+    <form action="" (ngSubmit)="addTestimonial()"  >
+      <div class="form-group row">
+      <label for="" class="label col-lg-2 col-form-label">Name </label><br>
+    <input class="form-control col-lg-10" type="text" name="name" id="name" [(ngModel)]="testimonialDetails.name"placeholder="name" >
+ 
+    <label for=""class="label col-lg-2 col-form-label">Position </label><br>
+    <input class="form-control col-lg-10" type="text" name="position" id="position" [(ngModel)]="testimonialDetails.position" placeholder="Position">
+    
+    <label for=""class="label col-lg-2 col-form-label">Organization</label><br>
+    <input class="form-control col-lg-10" type="text"name="organization" id="organization" [(ngModel)]="testimonialDetails.organization" placeholder="Organization">
+    
+    <label for=""class="label col-lg-2 col-form-label">Testimonial </label><br>
+    <input class="form-control col-lg-10" type="text" name="testimonial" id="testimonial" [(ngModel)]="testimonialDetails.testimonial" placeholder="Testimonial">
+    
+    <label for=""class="label col-lg-2 col-form-label">Course_Title</label><br>
+    <input class="form-control col-lg-10" type="text"name="course_title" id="course_Title" [(ngModel)]="testimonialDetails.course_title" placeholder="course">
+    
+    <label for=""class="label col-lg-2 col-form-labe">Image</label>
+    <input class="form-control" type="file" name="image" id="image" (change)="selectImage($event)" [(ngModel)]="testimonialDetails.image"   placeholder="Image Url"><br>
+    
+     <br>
+    <br>
+
+   
+
+
+    <div class="d-flex justify-content-center">
+      <button class="btn btn-outline-primary text-center addtestimonial">Add</button>
+   </div>
+      </div>
+    </form>
+    </div>
+</div>
+    
+    
+  
+    
+
+
+
